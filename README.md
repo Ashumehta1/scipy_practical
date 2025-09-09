@@ -23,7 +23,11 @@ Arguments:
     Off-diagonal elements: covariance
         Cov(X₁, X₂) = 1
     → This means the two variables are positively correlated.
-
+    ->covariance matrices must satisfy
+        cov(x,y)=cov(y,x)
+    -> it must satisfy:
+        a≥0,d≥0 (variances must be non-negative)
+        ad-b^2≥0 or b^2ad (determinant must be ≥ 0 → ensures positive semi-definite)
 3. Size → 200
     Generate 200 samples from this 2D Gaussian distribution.
     a will be a (200, 2) NumPy array (200 rows, 2 columns).
