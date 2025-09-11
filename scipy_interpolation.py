@@ -28,6 +28,8 @@ y_c=np.array([predict_cubic(x) for x in x2])
 y2=[y_q,y_l,y_n,y_z,y_sl,y_c]
 names = ['quadratic','linear','nearest','zero','slinear','cubic']
 plt.plot(x,y,"o:",label="data")
+plt.legend()
+plt.show()
 for i,names in zip(y2,names):
     plt.plot(x2,i,"ro:",label=names)
     plt.legend()
