@@ -17,3 +17,10 @@ print('''permutations: special.perm(n,m)
       n = no of objects
       m = no of object picked (order matters)''')
 print("permutations:", special.perm(10,4) )
+
+x=np.linspace(-6,6,105)
+y=expit(x)
+import matplotlib.pyplot as plt
+plt.plot(x,y)
+plt.title("sigmoid")
+plt.show()
